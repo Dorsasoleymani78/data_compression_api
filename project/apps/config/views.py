@@ -16,7 +16,7 @@ class Process_commands(APIView):
     def post(self,request):
         typeOfPlatform=platform.system()
         #system must be linux
-        if  typeOfPlatform=='Windows':
+        if  typeOfPlatform=='linux':
             # send data for serialize
             ser_data=commandSerialize(data=request.data)
             #check the data
